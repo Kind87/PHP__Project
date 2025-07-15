@@ -17,7 +17,7 @@
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
-                margin: 10;
+                margin: 0;
             }
 
             .full-height {
