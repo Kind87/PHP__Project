@@ -32,3 +32,7 @@
 Route::get("/",function(){
     return view("hello-world");
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
