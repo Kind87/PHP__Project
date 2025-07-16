@@ -29,7 +29,7 @@
 
 // Route::get("/trivia/{id}","TriviaController@trivia");
 
-Route::get("/",function(){
+Route::get("/", function () {
     return view("hello-world");
 });
 

@@ -6,11 +6,14 @@
 :root {
     --rounded: 10px;
     --bgColor: #fff2e0;
+    --greyblue: #a6bfc6;
+    --greylight: rgb(196, 217, 210);
     --lightPurple: #c0c9ee;
     --middlePurple: #a2aadb;
+    --brown: #ded3c4;
     --deepPurple: #898ac4;
     --greyPurple: #8174a0;
-    --yellow: #ffe3a9;
+    --yellowOrange: #ffe3a9;
     --blue: #5eabd6;
     --shadow-light: 0.8px 0.8px 0.8px rgb(83, 81, 81);
 }
@@ -26,8 +29,8 @@ h2 {
     text-align: center;
 }
 
-.container {
-    height: 100vh;
+.Guestcontainer {
+    height: 90vh;
     width: 100vw;
     padding: 5vh 10vw;
     box-sizing: border-box;
@@ -69,7 +72,7 @@ h2 {
     width: 80%;
     gap: 20px;
     flex-direction: column;
-    background-color: var(--middlePurple);
+    background-color: var(--greyblue);
     box-sizing: border-box;
     padding: 30px 40px;
     border-radius: var(--rounded);
@@ -150,7 +153,7 @@ h2 {
     padding: 5px 40px;
     min-height: 80px;
     box-sizing: border-box;
-    background-color: var(--lightPurple);
+    background-color: var(--greylight);
     border-radius: var(--rounded);
     display: flex;
     align-items: center;
@@ -175,12 +178,12 @@ h2 {
 #messages {
     display: flex;
     flex-direction: column;
-    min-height: 55vh;
-    max-height: 55vh;
+    min-height: 45vh;
+    max-height: 45vh;
     gap: 10px;
     overflow-y: auto;
     box-sizing: border-box;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 .userContent__option {
@@ -194,7 +197,7 @@ h2 {
 
 .deleteComment,
 .UpdateBtn {
-    padding: 3px;
+    padding: 1px 5px;
     scale: 1.5;
     box-sizing: var(--shadow-light);
     position: relative;
@@ -207,8 +210,8 @@ h2 {
     position: absolute;
     width: 30px;
     height: 18px;
-    top: -100%;
-    left: -30%;
+    top: -80%;
+    left: -15%;
     background-color: var(--greyPurple);
     border-radius: var(--rounded);
     visibility: hidden;
