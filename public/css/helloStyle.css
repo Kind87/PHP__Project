@@ -16,6 +16,7 @@
     --yellowOrange: #ffe3a9;
     --blue: #5eabd6;
     --shadow-light: 0.8px 0.8px 0.8px rgb(83, 81, 81);
+    --modalBg: #a2b1c5;
 }
 
 body {
@@ -53,17 +54,6 @@ h2 {
 
 .leftBlock h1 {
     margin: 10px 0;
-}
-
-.createForm {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.createRow {
-    display: flex;
-    flex-direction: column;
 }
 
 .content {
@@ -151,7 +141,7 @@ h2 {
 
 .userContent {
     padding: 5px 40px;
-    min-height: 80px;
+    min-height: 100px;
     box-sizing: border-box;
     background-color: var(--greylight);
     border-radius: var(--rounded);
@@ -160,6 +150,7 @@ h2 {
     justify-content: center;
     transition: opacity 0.5s ease, transform 0.5s ease;
     position: relative;
+    border: white solid 1.5px;
 }
 
 .userContent__message {
@@ -168,6 +159,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-weight: bold;
 }
 
 .fade-out {
@@ -183,7 +175,6 @@ h2 {
     gap: 10px;
     overflow-y: auto;
     box-sizing: border-box;
-    padding: 15px 0;
 }
 
 .userContent__option {
@@ -259,7 +250,7 @@ button {
 .editModal,
 .createModal {
     position: absolute;
-    background-color: chocolate;
+    background-color: var(--modalBg);
     border-radius: var(--rounded);
     height: 50vh;
     min-width: 30vw;
@@ -277,6 +268,12 @@ button {
     z-index: 999;
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+.fromGap {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
 }
 
 .editFrom,

@@ -32,8 +32,9 @@ const commentComponent = function (msg) {
 
     divBox.innerHTML = `   
             <div class="userContent__message">
+                <div>文章：${msg.content}</div>
                 <div>姓名：${msg.name}</div>
-                <div>留言：${msg.content}</div>
+                <div>發文時間：${msg.created_at.split(" ")[0]}</div>
             </div>
             <div class="userContent__option">            
                 <button class = "deleteComment">
